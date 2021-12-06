@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  docker-test:
+    container_name: docker-test-prod
+    build:
+      context: .
+      target: production
+    image: docker-test-prod
+    ports:
+      - 3000:3000
+    command: yarn start
