@@ -14,5 +14,3 @@ Use command `make dev-down` to stop the Docker container.
 To start the production Docker container run `make prod-up`. This will start the production server on localhost:3000.
 
 Use command `make prod-down` to stop the Docker container.
-## Simple Start
-
