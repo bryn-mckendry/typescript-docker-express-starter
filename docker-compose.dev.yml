@@ -1,12 +1,12 @@
 version: '3.7'
 
 services:
-  docker-test:
-    container_name: docker-test-dev
+  ts-express-app:
+    container_name: ts-express-app-dev
     build:
       context: .
       target: base
-    image: docker-test-dev
+    image: ts-express-app-dev
     expose:
       - "9229"
     ports:

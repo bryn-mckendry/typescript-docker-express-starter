@@ -1,11 +1,3 @@
-import express, { Application, Request, Response } from 'express';
-
-const app: Application = express();
-
-app.use(express.json());
-
-app.get('/', (req: Request, res: Response) => {
-  return res.status(200).json({ msg: 'Hello from docker!' });
-});
+import app from './app';
 
 app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}...`));
